@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>星河笔记 | 个人博客</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="top-nav">
+        <span class="logo">星河笔记</span>
+        <button id="theme-toggle" aria-label="切换主题">🌙 夜间模式</button>
+      </nav>
+      <div class="hero-content">
+        <h1>你好，我是林一。</h1>
+        <p>一名热爱前端开发、写作与摄影的创作者，记录技术与生活的交汇点。</p>
+        <a class="cta" href="#posts">阅读最新文章</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <h2>关于我</h2>
+        <p>
+          我喜欢把复杂的技术问题讲清楚，也喜欢在清晨拍下城市第一束光。这个博客用于分享：开发实践、效率工具、和真实的成长复盘。
+        </p>
+      </section>
+
+      <section id="posts" class="section">
+        <h2>最新文章</h2>
+        <div class="post-grid">
+          <article class="post-card">
+            <p class="tag">前端工程</p>
+            <h3>我如何用 30 分钟搭建一个可维护的项目骨架</h3>
+            <p>从目录规划、代码规范到自动化检查，一套可复制的开局模板。</p>
+            <a href="#">阅读全文 →</a>
+          </article>
+
+          <article class="post-card">
+            <p class="tag">效率系统</p>
+            <h3>把“想做很多事”变成“每天做成一件事”</h3>
+            <p>分享我的每周复盘框架，让目标从愿望变成可执行计划。</p>
+            <a href="#">阅读全文 →</a>
+          </article>
+
+          <article class="post-card">
+            <p class="tag">生活记录</p>
+            <h3>一台相机，一次夜跑，重新找回创作灵感</h3>
+            <p>低谷期我如何通过微小习惯重启表达欲与行动力。</p>
+            <a href="#">阅读全文 →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <h2>联系我</h2>
+        <p>欢迎交流：合作、技术讨论或读者来信。</p>
+        <ul>
+          <li>邮箱：hello@example.com</li>
+          <li>GitHub：github.com/linyi</li>
+          <li>公众号：星河笔记</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> 星河笔记 · 用文字记录成长。</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

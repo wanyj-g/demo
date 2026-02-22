@@ -1,0 +1,156 @@
+:root {
+  --bg: #f7f9fc;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --primary: #2563eb;
+  --primary-soft: #dbeafe;
+  --border: #e5e7eb;
+  --shadow: 0 12px 30px rgba(31, 41, 55, 0.08);
+}
+
+body.dark {
+  --bg: #0f172a;
+  --surface: #111827;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --primary: #60a5fa;
+  --primary-soft: #1e3a8a;
+  --border: #1f2937;
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.7;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb 60%, #3b82f6);
+  color: #fff;
+  padding: 2rem 1.5rem 4rem;
+}
+
+.top-nav {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+#theme-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.hero-content {
+  max-width: 980px;
+  margin: 4rem auto 0;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  margin-bottom: 0.8rem;
+}
+
+.hero-content p {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1.2rem;
+  background: #fff;
+  color: #1d4ed8;
+  padding: 0.65rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 980px;
+  margin: -2.5rem auto 2rem;
+  padding: 0 1.5rem;
+}
+
+.section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.4rem;
+  margin-bottom: 1.2rem;
+  box-shadow: var(--shadow);
+}
+
+.section h2 {
+  margin-top: 0.2rem;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.post-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--surface), var(--primary-soft) 12%);
+}
+
+.tag {
+  display: inline-block;
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--primary);
+  background: var(--primary-soft);
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+}
+
+.post-card h3 {
+  margin: 0.7rem 0 0.5rem;
+  font-size: 1.05rem;
+}
+
+.post-card p {
+  color: var(--muted);
+}
+
+.post-card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact ul {
+  padding-left: 1rem;
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem 2.5rem;
+  color: var(--muted);
+}
